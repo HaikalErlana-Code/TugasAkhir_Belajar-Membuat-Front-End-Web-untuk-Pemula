@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #D9C7C3;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Container utama */
+main {
+  width: 800px;
+  color: rgb(134, 116, 92);
+  margin: 20px auto;
+}
+
+/* Card / Box */
+section {
+  background: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Judul section */
+section h2 {
+  text-align: center;
+  color: #D9C7C3;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Tombol */
+button {
+  background-color: #D9C7C3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bookForm label[for="bookFormIsComplete"] {
+  display: inline;
+}
+
+#bookFormSubmit {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#searchBook {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* memberi jarak antara input dan tombol */
+}
+
+#searchBook input {
+  flex: 1;
+}
+
+button:hover {
+  background-color: #D9C7C3;
+}
+
+/* List buku */
+[data-testid="bookItem"] {
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+[data-testid="bookItem"] h3 {
+  margin: 0;
+}
+
+[data-testid="bookItem"] p {
+  margin: 5px 0;
+}
+
+/* tombol dalam item buku */
+[data-testid="bookItem"] div {
+  margin-top: 10px;
+}
+
+[data-testid="bookItem"] button {
+  margin-right: 5px;
+}
